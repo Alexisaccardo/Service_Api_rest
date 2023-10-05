@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "6715a5f3-3161-4133-ab3b-8e7b33d6206d",
+		"name": "Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"54321\",\r\n    \"name\": \"Adriana\",\r\n    \"ally\": \"Meli\",\r\n    \"activation_date\":\"\",\r\n    \"inactivation_date\": \"\",\r\n    \"status\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"12345\",\r\n    \"name\": \"Alexis\",\r\n    \"ally\": \"Meli\",\r\n    \"activation_date\":\"2023-10-05T16:06:57.098541200\",\r\n    \"inactivation_date\": \"\",\r\n    \"status\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit_",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit_"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_inactive",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_inactive",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_inactive"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
